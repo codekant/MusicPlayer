@@ -5,8 +5,8 @@ const http = require("http");
 const app = express();
 
 let server = http.createServer(app);
-server.listen(30, () => {
-    console.log("Listening on PORT 30");
+server.listen(3000, () => {
+    console.log("Listening on PORT 3000");
 });
 
 app.set('view engine', 'ejs');
