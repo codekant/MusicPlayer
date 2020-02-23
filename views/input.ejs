@@ -1,0 +1,82 @@
+<html>
+
+   <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<title>
+    Music Player
+</title>
+   </head>
+
+    <style>
+        body {
+            background-image: url("https://cdn3.pitchfork.com/longform/683/Year_In_Streaming_v2.jpg");
+            color: #ffffff;
+        }
+
+        .kok {
+            background-image: url("https://wallpaperaccess.com/full/340434.png");
+            color: #ffffff;
+            margin-left: 100px;
+            margin-right: 100px;
+            border: 20px;
+            border-radius: 8px;
+        }
+
+        .kek {
+            color: #ffffff;
+            max-width: 40rem;
+        }
+
+        .navbar {
+            background-image: url("http://getwallpapers.com/wallpaper/full/a/a/7/572066.jpg");
+        }
+
+        .show {
+            max-width: 40rem;
+        }
+    </style>
+
+   <body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">
+          <img src="https://yt3.ggpht.com/JwnrVUXtTS-uQ4a0Kepzr_IA_jsX7EX2_92kz-oFTOqvETxw7p2iyYWHMejQbvC_9yQP0m2hg1o=s900-c-k-c0xffffffff-no-rj-mo" width="30" height="30" alt="" class="rounded">
+        </a>
+      </nav>
+      <br>
+      <% if(error) { %>
+        <center>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                Provide a valid YouTube URL!
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+        </center>
+        <% } %>
+      <br><br>
+      <div class="kok">
+          <br><br>
+          <center>
+            <h1><strong>URLs Here</strong></h1>
+            <p class="text-muted">You can enter either spotify or youtube URLs!</p>
+            <br><br>
+            <form action="/play">
+                <input class="form-control kek" name="url">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" value="true" class="custom-control-input" id="hehe" name="loop">
+                    <br>
+                    <label class="custom-control-label" for="hehe">Loop this song?</label>
+                  </div>
+                  <br>
+                <button type="submit" class="btn btn-light">Play It!</button>
+                <br>
+            </form>
+          </center>
+          <br><br>
+      </div>
+   </body>
+
+</html>
