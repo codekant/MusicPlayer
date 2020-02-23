@@ -1,10 +1,10 @@
 {
-  "name": "musicplayer",
+  "name": "69player89",
   "version": "1324.2332.22",
   "description": "Best Player on earth :pog:",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
     "youtube"
   ],
   "author": "Srrrrkant",
-  "license": "MIT",
+  "license": "ISC",
   "dependencies": {
     "ejs": "^3.0.1",
     "express": "^4.17.1",
