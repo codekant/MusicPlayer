@@ -1,5 +1,5 @@
 {
-  "name": "69player89",
+  "name": "musicplayer",
   "version": "1324.2332.22",
   "description": "Best Player on earth :pog:",
   "main": "index.js",
@@ -20,7 +20,7 @@
     "youtube"
   ],
   "author": "Srrrrkant",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "ejs": "^3.0.1",
     "express": "^4.17.1",
