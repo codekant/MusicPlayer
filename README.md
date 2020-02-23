@@ -17,7 +17,3 @@
  Join our discord [here](https://discord.gg/p29HQX3) or [here](https://discord.gg/p29HQX3)
  or just me @Srrrrkant#3621
  _______________________________________________________________
-
- Visit the real time [Example build](https://player.srrrrkant.cf)
- 
- 

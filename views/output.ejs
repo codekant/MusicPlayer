@@ -26,7 +26,7 @@
         }
 
         .kek {
-            color: #ffffff;
+            color: #23272A;
             max-width: 40rem;
         }
 
@@ -42,6 +42,21 @@
         .bwaii {
             width: 600px;
         }
+      
+      a {
+        text-decorations: none;
+        color: #23272A;
+      }
+      
+      a:hover {
+        text-decorations: none;
+        color: #23272A;
+      }
+      
+      a:active {
+        text-decorations: none;
+        color: #23272A;
+      }
 
     </style>
 
@@ -59,7 +74,7 @@
             <div class="pog">
                 <img src="<%= thumbnail %>" class="img-fluid rounded" width="300px" height="200" draggable="false"><br>
             <br>
-            <h1><strong><%= title %></strong></h1>
+              <h1><strong><a href="<%= data.video_url %>"><%= title %></a></strong></h1>
             <p class="text-muted">Control your music below!</p>
             <br>
             <audio class="bwaii" preload controls autoplay <% if(loop === 'true') { %>loop<% } %>>
