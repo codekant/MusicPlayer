@@ -27,7 +27,7 @@
 
         .kek {
             color: #23272A;
-            max-width: 40rem;
+            max-width: 40%;
         }
 
         .navbar {
@@ -40,7 +40,7 @@
         }
 
         .bwaii {
-            width: 600px;
+            width: 60%;
         }
       
       a {
@@ -79,8 +79,11 @@
             <br>
             <audio class="bwaii" preload controls autoplay <% if(loop === 'true') { %>loop<% } %>>
                 <source src="<%= play %>">
-                    <p class="text-muted"><strong>Your browser doesn't seem to support audio!</strong></p>
             </audio>
+              <br><br>
+              <% if(!play) { %> 
+              <p class="text-muted">The player isn't starting, maybe because this song is copystrike protected or secured by youtube.</p>
+              <% } %>
             </div>
             
           </center>
