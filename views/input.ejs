@@ -26,7 +26,7 @@
         }
 
         .kek {
-            color: #ffffff;
+            color: #23272A;
             max-width: 40rem;
         }
 
@@ -50,6 +50,16 @@
         <center>
             <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 Provide a valid YouTube URL!
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+        </center>
+        <% } %>
+     <% if(bitError) { %>
+        <center>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                That song couldn't be played as it has too many bitrates for the browser to buffer.
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
